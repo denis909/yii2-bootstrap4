@@ -12,6 +12,8 @@ class Theme extends \denis909\yii\Theme
 
     const GRID_VIEW = GridView::class;
 
+    const DETAIL_VIEW = DetailView::class;
+
     const CAROUSEL = Bootstrap4Carousel::class;
 
     const CAROUSEL_ITEM = Bootstrap4CarouselItem::class;
