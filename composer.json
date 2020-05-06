@@ -5,5 +5,15 @@
         "psr-4": {
             "denis909\\bootstrap4\\" : ""
         }
+    },
+    "require": {
+        "denis909/yii2-theme": "*",
+        "denis909/yii2-bootstrap4-carousel": "*",
+        "kartik-v/yii2-widget-timepicker": "^1.0",
+        "kartik-v/yii2-widget-datepicker": "^1.4",
+        "kartik-v/yii2-widget-datetimepicker": "^1.4",
+        "kartik-v/yii2-widget-select2": "^2.1",
+        "kartik-v/yii2-date-range": "^1.7",
+        "kartik-v/yii2-tabs-x": "^1.2"
     }
 }
