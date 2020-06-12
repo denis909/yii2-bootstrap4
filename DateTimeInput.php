@@ -4,7 +4,7 @@ namespace denis909\bootstrap4;
 
 use yii\helpers\ArrayHelper;
 
-class DateTimePicker extends \kartik\datetime\DateTimePicker
+class DateTimeInput extends \kartik\datetime\DateTimePicker
 {
 
     public $bsVersion = '4';

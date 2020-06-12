@@ -4,23 +4,23 @@ namespace denis909\bootstrap4;
 
 use Yii;
 use yii\helpers\ArrayHelper;
-use denis909\yii\ActiveFieldInterface;
-use denis909\yii\ActiveFieldTrait;
+use denis909\theme\ActiveFieldInterface;
+use denis909\theme\ActiveFieldTrait;
 
 class ActiveField extends \yii\bootstrap4\ActiveField implements ActiveFieldInterface
 {
 
+    const SELECT2 = Select2::class;
+
+    const DATE = DateInput::class;
+
+    const TIME = TimeInput::class;
+
+    const DATETIME = DateTimeInput::class;
+
+    const DATERANGE = DateRangeInput::class;
+
     use ActiveFieldTrait;
-
-    const SELECT2 = Theme::SELECT2;
-
-    const DATE_PICKER = Theme::DATE_PICKER;
-
-    const TIME_PICKER = Theme::TIME_PICKER;
-
-    const DATETIME_PICKER = Theme::DATETIME_PICKER;
-
-    const DATERANGE_PICKER = Theme::DATERANGE_PICKER;
 
     public $checkOptions = [
         'class' => ['widget' => 'control-input'],
@@ -35,28 +35,28 @@ class ActiveField extends \yii\bootstrap4\ActiveField implements ActiveFieldInte
     {
         Yii::$app->params['bsDependencyEnabled'] = false;
 
-        return $this->widget(static::DATE_PICKER, $options);
+        return $this->widget(static::DATE, $options);
     }
 
     public function daterange(array $options = [])
     {
         Yii::$app->params['bsDependencyEnabled'] = false;
 
-        return $this->widget(static::DATERANGE_PICKER, $options);
+        return $this->widget(static::DATERANGE, $options);
     }
 
     public function datetime(array $options = [])
     {
         Yii::$app->params['bsDependencyEnabled'] = false;
 
-        return $this->widget(static::DATETIME_PICKER, $options);
+        return $this->widget(static::DATETIME, $options);
     }
 
     public function time(array $options = [])
     {
         Yii::$app->params['bsDependencyEnabled'] = false;
 
-        return $this->widget(static::TIME_PICKER, $options);
+        return $this->widget(static::TIME, $options);
     }
 
     public function select2(array $options = [])

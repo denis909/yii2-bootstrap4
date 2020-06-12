@@ -4,27 +4,19 @@ namespace denis909\bootstrap4;
 
 use yii\helpers\ArrayHelper;
 
-class DateRangePicker extends \kartik\daterange\DateRangePicker
+class TimeInput extends \kartik\time\TimePicker
 {
 
     public $bsVersion = '4';
 
     public $defaultPluginOptions = [
-        'locale' => [
-            'format' => 'YYYY-MM-DD'
-        ]    
-    ];
-
-    public $defaultOptions = [
-        'class' => 'form-control',
-        'autocomplete' => 'off'
+        'autoclose' => true,
+        'format' => 'hh:ii:ss'
     ];
 
     public function init()
     {
         $this->pluginOptions = ArrayHelper::merge($this->defaultPluginOptions, $this->pluginOptions);
-
-        $this->options = ArrayHelper::merge($this->defaultOptions, $this->options);
 
         parent::init();
 

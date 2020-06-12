@@ -2,8 +2,8 @@
 
 namespace denis909\bootstrap4;
 
-use denis909\yii\ActiveFormInterface;
-use denis909\yii\ActiveFormTrait;
+use denis909\theme\ActiveFormInterface;
+use denis909\theme\ActiveFormTrait;
 
 class ActiveForm extends \yii\bootstrap4\ActiveForm implements ActiveFormInterface
 {
