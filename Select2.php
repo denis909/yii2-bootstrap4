@@ -4,7 +4,7 @@ namespace denis909\bootstrap4;
 
 use yii\helpers\ArrayHelper;
 
-class SelectInput extends \kartik\select2\Select2
+class Select2 extends \kartik\select2\Select2
 {
 
     public $showToggleAll = false;
