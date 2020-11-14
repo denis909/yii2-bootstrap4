@@ -11,11 +11,16 @@ class DateInput extends \kartik\date\DatePicker
 
     public $defaultPluginOptions = [
         'autoclose' => true,
-        'format' => 'yyyy-mm-dd'
+        'format' => 'yyyy-mm-dd'];
+
+    public $defaultOptions = [
+        'autocomplete' => 'off'
     ];
 
     public function init()
     {
+        $this->options = ArrayHelper::merge($this->defaultOptions, $this->options);
+
         $this->pluginOptions = ArrayHelper::merge($this->defaultPluginOptions, $this->pluginOptions);
 
         parent::init();

@@ -14,8 +14,14 @@ class DateTimeInput extends \kartik\datetime\DateTimePicker
         'format' => 'yyyy-mm-dd hh:ii:ss'
     ];
 
+    public $defaultOptions = [
+        'autocomplete' => 'off'
+    ];
+
     public function init()
     {
+        $this->options = ArrayHelper::merge($this->defaultOptions, $this->options);
+
         $this->pluginOptions = ArrayHelper::merge($this->defaultPluginOptions, $this->pluginOptions);
 
         parent::init();

@@ -14,9 +14,15 @@ class TimeInput extends \kartik\time\TimePicker
         'format' => 'hh:ii:ss'
     ];
 
+    public $defaultOptions = [
+        'autocomplete' => 'off'
+    ];
+
     public function init()
     {
         $this->pluginOptions = ArrayHelper::merge($this->defaultPluginOptions, $this->pluginOptions);
+
+        $this->options = ArrayHelper::merge($this->defaultOptions, $this->options);
 
         parent::init();
 

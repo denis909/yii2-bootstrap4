@@ -14,7 +14,8 @@ class Select2 extends \kartik\select2\Select2
     public $bsVersion = '4';
 
     public $defaultOptions = [
-        'class' => 'form-control'
+        'class' => 'form-control',
+        'autocomplete' => 'off'
     ];
 
     public $defaultPluginOptions = [
